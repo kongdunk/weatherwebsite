@@ -104,10 +104,10 @@ const fetchWeather = async () => {
 }
 
 useEffect(() => {
-  if(grabWeather.current === true) {
+  
+  //if(grabWeather.current === true) {
     fetchWeather();
-  }
-
+  //}
   return () => {
     grabWeather.current = true;
   }
